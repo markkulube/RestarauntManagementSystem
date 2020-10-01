@@ -1,0 +1,20 @@
+Mark:
+-Transfered phase1 files to phase2 to repo
+-Created duties.txt
+
+********************
+
+
+Andy
+
+********************
+
+
+Steve
+
+********************
+
+
+Eric
+
+********************

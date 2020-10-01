@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IngredientView">
+   <children>
+      <TableView fx:id="ingredientView" layoutX="74.0" layoutY="91.0" prefHeight="312.0" prefWidth="333.0">
+        <columns>
+          <TableColumn fx:id="ingredient" minWidth="20.0" prefWidth="96.0" text="Ingredient" />
+          <TableColumn fx:id="quantity" minWidth="20.0" prefWidth="96.0" text="Quantity" />
+            <TableColumn fx:id="reorder" minWidth="20.0" prefWidth="96.0" text="Reorder" />
+        </columns>
+      </TableView>
+      <Button fx:id="logOut" layoutX="481.0" layoutY="25.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="85.0" text="Log Out" />
+      <Button fx:id="back" layoutX="32.0" layoutY="25.0" mnemonicParsing="false" onAction="#Back" prefWidth="85.0" text="Back" />
+      <Label layoutX="217.0" layoutY="25.0" prefHeight="25.0" prefWidth="150.0" text="Ingredient Inventory">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateStock1" layoutX="429.0" layoutY="201.0" mnemonicParsing="false" onAction="#UpdateStock" prefHeight="25.0" prefWidth="157.0" text="Update Stock" />
+      <Label layoutX="434.0" layoutY="115.0" prefHeight="17.0" prefWidth="118.0" text="Enter Delivered Stock" />
+      <Label layoutX="429.0" layoutY="147.0" text="Ingred:" />
+      <Label layoutX="429.0" layoutY="175.0" text="Qty:" />
+      <TextField fx:id="ingred" layoutX="481.0" layoutY="143.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField fx:id="qty" layoutX="481.0" layoutY="171.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="438.0" layoutY="273.0" prefHeight="17.0" prefWidth="118.0" text="New Stock From File" />
+      <TextField fx:id="file" layoutX="487.0" layoutY="297.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="426.0" layoutY="301.0" text="File Name:" />
+      <Button fx:id="updateStock2" layoutX="433.0" layoutY="329.0" mnemonicParsing="false" onAction="#UpdateStock" prefHeight="25.0" prefWidth="157.0" text="Update Stock" />
+      <Button fx:id="home" layoutX="484.0" layoutY="66.0" mnemonicParsing="false" onAction="#Home" prefWidth="85.0" text="Home" />
+   </children>
+</AnchorPane>

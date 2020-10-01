@@ -1,0 +1,12 @@
+Server | 1 | Order | 1 | Mark * Burger # Tomato: +1 % Cheese: -1, Fries # Potato: +1, Drink # None: 0 | Jason * Hot Dog # None: 0, Boiled Eggs # Egg: +2, Drink # Pop Can: +1 | Raj * Ice Cream # None: 0
+Cook | 1 | KitchenStatus | 1 | Order, 1 | Received
+Cook | 1 | OrderStatus | 1 | Order, 1 | Ready
+Server | 1 | Confirmation | 1 | Mark * Burger-ACC, Fries-REJ, Drink-ACC  | Jason * Hot Dog-REJ, Boiled Eggs-REJ, Drink-ACC | Raj * Ice Cream-REJ
+Cook | 1 | KitchenStatus | 1 | Order, 1 | Received
+Cook | 1 | OrderStatus | 1 | Order, 1 | Ready
+Server | 1 | Bill | 1 | Print Bill
+Server | 1 | Confirmation | 1 | Mark * Fries-ACC  | Jason * Hot Dog-ACC, Boiled Eggs-ACC | Raj * Ice Cream-ACC
+Server | 1 | Bill | 1 | Print Bill
+Manager | 1 | StockCheck | 1 | Print Stock
+Manager | 1 | Shipment | 1 | Received | Bread: 10, Lettuce: 10, Cheese: 10, Tomato: 10, Sausage: 10, Potato: 10, Pop Can: 10, Cream Scoop: 10, Cone: 10, Egg: 10
+Manager | 1 | StockCheck | 1 | Print Stock

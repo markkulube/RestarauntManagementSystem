@@ -1,0 +1,31 @@
+Server takes order (input)
+-updates order list for each customer.
+-updates order queue.
+-prints to the screen.
+
+Cook acknowledges order (input)
+-prints to screen
+
+Cook confirms order ready (input)
+-prints to screen
+
+Ingredients deducted from inventory
+-prints to screen
+
+Server confirms customer accepted dish(input)
+-prints to screen
+-adds price to bill
+-prints bill
+
+Server alerts customer rejected dish
+-recreates order
+-prints to screen
+
+Manager checks inventory of ingredients (input)
+-prints to screen
+
+Manager accepts new shipments
+-prints new stock levels
+
+Stock to be ordered
+-Written to order.txt which appears in the phase1 directory each time program is run

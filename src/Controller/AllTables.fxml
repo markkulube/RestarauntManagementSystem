@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AllTablesView">
+   <children>
+      <Button fx:id="back" layoutX="76.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" prefWidth="85.0" text="Back" />
+      <Button fx:id="logOut" layoutX="591.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="85.0" text="Log Out" />
+      <Label layoutX="305.0" layoutY="5.0" text="Select A Table">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="table1" layoutX="75.0" layoutY="73.0" mnemonicParsing="false" onAction="#Table" text="Table 1 ">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table2" layoutX="339.0" layoutY="70.0" mnemonicParsing="false" onAction="#Table" text="Table 2">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table3" layoutX="593.0" layoutY="73.0" mnemonicParsing="false" onAction="#Table" text="Table 3">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table4" layoutX="218.0" layoutY="115.0" mnemonicParsing="false" onAction="#Table" text="Table 4">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table5" layoutX="459.0" layoutY="112.0" mnemonicParsing="false" onAction="#Table" text="Table 5">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table6" layoutX="78.0" layoutY="168.0" mnemonicParsing="false" onAction="#Table" text="Table 6">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table7" layoutX="339.0" layoutY="165.0" mnemonicParsing="false" onAction="#Table" text="Table 7">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table8" layoutX="593.0" layoutY="168.0" mnemonicParsing="false" onAction="#Table" text="Table 8">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table9" layoutX="218.0" layoutY="214.0" mnemonicParsing="false" onAction="#Table" text="Table 9">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table10" layoutX="454.0" layoutY="211.0" mnemonicParsing="false" onAction="#Table" text="Table 10">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table11" layoutX="73.0" layoutY="275.0" mnemonicParsing="false" onAction="#Table" text="Table 11">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table12" layoutX="334.0" layoutY="272.0" mnemonicParsing="false" onAction="#Table" text="Table 12">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table13" layoutX="588.0" layoutY="275.0" mnemonicParsing="false" onAction="#Table" text="Table 13">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table15" layoutX="454.0" layoutY="328.0" mnemonicParsing="false" onAction="#Table" text="Table 15">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="table14" layoutX="213.0" layoutY="331.0" mnemonicParsing="false" onAction="#Table" prefHeight="26.0" prefWidth="92.0" text="Table 14">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

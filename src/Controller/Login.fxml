@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="368.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogInController">
+   <children>
+      <Label fx:id="lblStatus" layoutX="7.0" layoutY="14.0" prefHeight="27.0" prefWidth="287.0" text="Welcome!" textFill="#c9353b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="112.0" text="username:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="163.0" text="password:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="69.0" text="employeeID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeID" layoutX="124.0" layoutY="60.0" onAction="#Login" prefHeight="39.0" prefWidth="59.0" promptText="ID#">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" layoutX="124.0" layoutY="103.0" onAction="#Login" prefHeight="39.0" prefWidth="125.0" promptText="username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="124.0" layoutY="154.0" onAction="#Login" prefHeight="39.0" prefWidth="125.0" promptText="password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="reset" layoutX="47.0" layoutY="220.0" mnemonicParsing="false" onAction="#Reset" prefWidth="59.0" text="Reset" />
+      <Button fx:id="login" layoutX="124.0" layoutY="220.0" mnemonicParsing="false" onAction="#Login" prefWidth="59.0" text="Login" />
+      <Button fx:id="exit" layoutX="197.0" layoutY="220.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="59.0" text="Exit" />
+   </children>
+</AnchorPane>

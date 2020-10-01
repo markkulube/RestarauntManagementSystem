@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="469.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AllOrdersView">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="466.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="orderLabel" layoutX="287.0" layoutY="62.0" text="All Orders">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="allOrderView" layoutX="53.0" layoutY="100.0" prefHeight="238.0" prefWidth="546.0">
+              <columns>
+                <TableColumn fx:id="ordNum" prefWidth="90.0" text="Order #" />
+                <TableColumn fx:id="tableNum" prefWidth="90.0" text="Table #" />
+                  <TableColumn fx:id="serverNum" prefWidth="90.0" text="Server#" />
+                  <TableColumn fx:id="cookNum" prefWidth="90.0" text="Cook#" />
+                  <TableColumn fx:id="status" prefWidth="90.0" text="Status" />
+                  <TableColumn fx:id="redo" prefWidth="90.0" text="Comments" />
+              </columns>
+            </TableView>
+            <Button fx:id="back" layoutX="29.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" prefWidth="85.0" text="Back" />
+            <Button fx:id="logOut" layoutX="530.0" layoutY="26.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="85.0" text="LogOut" />
+            <Button fx:id="acceptOrder" layoutX="279.0" layoutY="354.0" mnemonicParsing="false" onAction="#AcceptOrder" prefWidth="95.0" text="Accept Order" />
+            <Button fx:id="viewSelectedOrder" layoutX="374.0" layoutY="396.0" mnemonicParsing="false" onAction="#ViewSelectedOrder" prefWidth="95.0" text="View  Order" />
+            <Button fx:id="home" layoutX="279.0" layoutY="26.0" mnemonicParsing="false" onAction="#Home" prefWidth="95.0" text="Home" />
+            <Button fx:id="myOrders" layoutX="279.0" layoutY="430.0" mnemonicParsing="false" onAction="#MyOrders" prefWidth="95.0" text="My Orders" />
+            <Button fx:id="viewCompleteOrder" layoutX="184.0" layoutY="396.0" mnemonicParsing="false" onAction="#ViewCompleteOrder" prefWidth="95.0" text="Completed" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TableOrderController">
+   <children>
+      <TableView fx:id="tableOrderView" layoutX="32.0" layoutY="81.0" prefHeight="200.0" prefWidth="732.0">
+         <columns>
+            <TableColumn fx:id="custName" prefWidth="100.0" text="Customer" />
+            <TableColumn fx:id="dishTable" prefWidth="100.0" text="Dish" />
+            <TableColumn fx:id="tableReq1" prefWidth="100.0" text="Request 1" />
+            <TableColumn fx:id="tableReq2" prefWidth="100.0" text="Request 2" />
+            <TableColumn fx:id="priceTable" text="Price" />
+            <TableColumn fx:id="accRej" text="ACC  |  REJ" />
+            <TableColumn fx:id="redo" prefWidth="136.0" text="Redo Reason" />
+         </columns>
+      </TableView>
+      <Label fx:id="tableLabel" layoutX="172.0" layoutY="24.0" prefHeight="35.0" prefWidth="203.0" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitOrder" layoutX="675.0" layoutY="29.0" mnemonicParsing="false" onAction="#SubmitOrder" prefWidth="95.0" text="Submit" />
+      <Button fx:id="back" layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#Back" prefWidth="95.0" text="Back" />
+      <Button fx:id="logOut" layoutX="781.0" layoutY="29.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="95.0" text="Log Out" />
+      <Button fx:id="printBill" layoutX="781.0" layoutY="106.0" mnemonicParsing="false" onAction="#PrintBill" prefWidth="95.0" text="Print Bill" />
+      <Button fx:id="myOrders" layoutX="571.0" layoutY="29.0" mnemonicParsing="false" onAction="#MyOrders" prefWidth="95.0" text="My Orders" />
+      <Label fx:id="statusText1" layoutX="65.0" layoutY="303.0" prefHeight="25.0" prefWidth="101.0" text="Order Status:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusText2" layoutX="166.0" layoutY="306.0" prefHeight="20.0" prefWidth="120.0" text="Not Submitted">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dishStatus" layoutX="286.0" layoutY="305.0" text="Select Dish Status: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="accept" layoutX="419.0" layoutY="303.0" mnemonicParsing="false" onAction="#AcceptReject" prefWidth="149.0" text="ACCEPT" />
+      <Button fx:id="reject" layoutX="582.0" layoutY="304.0" mnemonicParsing="false" onAction="#AcceptReject" prefWidth="149.0" text="REJECT" />
+      <Label fx:id="enterRedo" layoutX="453.0" layoutY="343.0" text="Enter Redo Reason:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="redoText" layoutX="582.0" layoutY="341.0" />
+      <Button fx:id="submitRedo" layoutX="582.0" layoutY="375.0" mnemonicParsing="false" onAction="#SubmitRedo" prefWidth="149.0" text="Submit" />
+      <Button fx:id="updateTableOrder" layoutX="65.0" layoutY="341.0" mnemonicParsing="false" onAction="#UpdateTableOrder" prefWidth="149.0" text="UPDATE ORDER" />
+      <Button fx:id="viewAcceptedDish" layoutX="179.0" layoutY="29.0" mnemonicParsing="false" onAction="#ViewAcceptedDish" prefWidth="149.0" text="View Accepted Dishes" />
+      <Button fx:id="viewDish" layoutX="364.0" layoutY="29.0" mnemonicParsing="false" onAction="#ViewDishes" prefWidth="149.0" text="Dishes In Kitchen" />
+   </children>
+</AnchorPane>

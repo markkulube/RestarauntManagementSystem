@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateOrderView">
+   <children>
+      <Button fx:id="cust1Chair" layoutX="30.0" layoutY="131.0" mnemonicParsing="false" onAction="#Customer" text="Customer1">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="cust2Chair" layoutX="30.0" layoutY="196.0" mnemonicParsing="false" onAction="#Customer" text="Customer2">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="cust3Chair" layoutX="30.0" layoutY="265.0" mnemonicParsing="false" onAction="#Customer" text="Customer3">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="cust4Chair" layoutX="30.0" layoutY="323.0" mnemonicParsing="false" onAction="#Customer" text="Customer4">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Button>
+      <Button fx:id="logOut" layoutX="651.0" layoutY="27.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="88.0" text="Log Out" />
+      <Button fx:id="back" layoutX="30.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" prefWidth="88.0" text="Back" />
+      <TableView fx:id="custTableOrder" layoutX="207.0" layoutY="71.0" prefHeight="200.0" prefWidth="392.0">
+        <columns>
+          <TableColumn fx:id="dishTable" prefWidth="100.0" text="Dish" />
+          <TableColumn fx:id="tableReq1" prefWidth="100.0" text="Request 1" />
+            <TableColumn fx:id="tableReq2" prefWidth="100.0" text="Request 2" />
+            <TableColumn fx:id="priceTable" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewTableOrder" layoutX="613.0" layoutY="149.0" mnemonicParsing="false" onAction="#ViewTableOrder" prefHeight="25.0" prefWidth="177.0" text="VIEW TABLE ORDER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="addDish" layoutX="525.0" layoutY="338.0" mnemonicParsing="false" onAction="#AddDish" prefWidth="88.0" text="Add" />
+      <Label fx:id="tableLabel" layoutX="210.0" layoutY="23.0" prefHeight="35.0" prefWidth="392.0" text="Table 1: Customer Order" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="dish" layoutX="190.0" layoutY="338.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="request1" layoutX="299.0" layoutY="338.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="request2" layoutX="413.0" layoutY="338.0" prefWidth="88.0" />
+      <Button fx:id="confirmDish" layoutX="190.0" layoutY="386.0" mnemonicParsing="false" onAction="#ConfirmDish" prefWidth="88.0" text="Confirm Dish" />
+      <Button fx:id="reset" layoutX="525.0" layoutY="386.0" mnemonicParsing="false" onAction="#Reset" prefWidth="88.0" text="Reset" />
+      <Button fx:id="confirmR2" layoutX="413.0" layoutY="432.0" mnemonicParsing="false" onAction="#ConfirmRequest" prefWidth="88.0" text="Confirm R2" />
+      <Button fx:id="confirmR1" layoutX="299.0" layoutY="432.0" mnemonicParsing="false" onAction="#ConfirmRequest" prefWidth="88.0" text="Confirm R1" />
+      <ChoiceBox fx:id="plusminus1" layoutX="299.0" layoutY="386.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="plusminus2" layoutX="413.0" layoutY="386.0" prefWidth="88.0" />
+      <Label layoutX="15.0" layoutY="89.0" prefHeight="35.0" prefWidth="132.0" text="Select Customer" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="home" layoutX="483.0" layoutY="27.0" mnemonicParsing="false" onAction="#Home" prefWidth="88.0" text="Home" />
+      <Button fx:id="removeDish" layoutX="190.0" layoutY="432.0" mnemonicParsing="false" onAction="#RemoveDish" prefWidth="88.0" text="Remove Dish" />
+      <Label layoutX="189.0" layoutY="291.0" prefHeight="20.0" prefWidth="220.0" text="Use to drop down menu to select:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="317.0" text="Dish" />
+      <Label layoutX="318.0" layoutY="317.0" text="Request1" />
+      <Label layoutX="432.0" layoutY="317.0" text="Request2" />
+   </children>
+</AnchorPane>

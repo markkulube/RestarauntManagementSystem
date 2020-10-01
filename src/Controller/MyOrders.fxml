@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="449.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MyOrdersView">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="429.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="orderLabel" layoutX="234.0" layoutY="62.0" prefHeight="27.0" prefWidth="179.0" text="My Orders: Server1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="allOrderView" layoutX="53.0" layoutY="100.0" prefHeight="238.0" prefWidth="546.0">
+              <columns>
+                <TableColumn fx:id="ordNum" prefWidth="90.0" text="Order #" />
+                <TableColumn fx:id="tableNum" prefWidth="90.0" text="Table #" />
+                  <TableColumn fx:id="serverNum" prefWidth="90.0" text="Server#" />
+                  <TableColumn fx:id="cookNum" prefWidth="90.0" text="Cook#" />
+                  <TableColumn fx:id="status" prefWidth="90.0" text="Status" />
+                  <TableColumn fx:id="redo" prefWidth="90.0" text="Redo" />
+              </columns>
+            </TableView>
+            <Button fx:id="back" layoutX="29.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" prefWidth="85.0" text="Back" />
+            <Button fx:id="logOut" layoutX="530.0" layoutY="26.0" mnemonicParsing="false" onAction="#LogOut" prefWidth="85.0" text="LogOut" />
+            <Button fx:id="viewAllOrder" layoutX="435.0" layoutY="355.0" mnemonicParsing="false" onAction="#ViewAllOrder" prefWidth="95.0" text="View All Order" />
+            <Button fx:id="setReady" layoutX="106.0" layoutY="355.0" mnemonicParsing="false" onAction="#SetReady" prefWidth="95.0" text="Set Ready" />
+            <Button fx:id="home" layoutX="281.0" layoutY="26.0" mnemonicParsing="false" onAction="#Home" prefWidth="85.0" text="Home" />
+            <Button fx:id="viewSelectedOrder" layoutX="254.0" layoutY="388.0" mnemonicParsing="false" onAction="#ViewSelectedOrder" prefHeight="25.0" prefWidth="132.0" text="View Selected Order" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
